@@ -2,7 +2,7 @@
 function encriptar() {
     let texto = document.getElementById("input-text").value;
 
-    // Validar que solo contenga letras minúsculas sin acentos
+    // Validar que solo contenga letras minúsculas sin acentos ni caracteres especiales
     if (!/^[a-z\s]*$/.test(texto)) {
         alert("Por favor, ingresa solo letras minúsculas, sin acentos ni caracteres especiales.");
         return;
