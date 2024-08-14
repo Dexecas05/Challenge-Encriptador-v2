@@ -56,6 +56,13 @@ function copiarTexto() {
 
     navigator.clipboard.writeText(texto).then(function() {
         alert("Texto copiado al portapapeles.");
+        // Limpiar el campo de entrada de texto
+        document.getElementById("input-text").value = "";
+        // Reiniciar el campo de salida de texto
+        document.getElementById("output-text").innerHTML = `
+        <h2 id="output-subtitle">Ningún mensaje fue encontrado.</h2>
+        <p id="output-paragraph">Ingresa el texto que deseas encriptar o desencriptar.</p>
+        `;
     }, function() {
         alert("Error al copiar el texto.");
     });
