@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Encriptador de Texto</h1>
+    </header>
+
+    <main class="main-container">
+        <section class="input-container">
+            <div class="input-container__textarea">
+                <label for="input-text" class="input-container__label">Ingrese el texto aquí:</label>
+                <textarea name="texto" class="input-container__text" id="input-text" cols="30" rows="10" placeholder="Ingrese el texto aquí."></textarea>
+            </div>
+
+            <div class="input-container__conditions">
+                <p>* Solo letras minúsculas, sin acentos ni caracteres especiales.</p>
+            </div>
+
+            <div class="input-container__buttons">
+                <button class="btn btn--encrypt" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="btn btn--decrypt" type="button" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="output-container">
+            <div class="output-container__text" id="output-text">
+                <h2 id="output-subtitle">Ningún mensaje fue encontrado.</h2>
+                <p id="output-paragraph">Ingresa el texto que deseas encriptar o desencriptar.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>By: Exequiel Castillo</p>
+        <p>Alura Latam | Oracle Next Education</p>
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>
+
+
