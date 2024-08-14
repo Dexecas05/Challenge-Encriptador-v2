@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 /* Reset de estilo básico */
 * {
     margin: 0;
@@ -6,7 +8,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
     background-color: #1c1c1c;
     color: #fff;
     display: flex;
@@ -20,10 +23,14 @@ body {
 
 header {
     width: 100%;
-    padding: 20px 0;
+    padding: 15px 10px;
     text-align: center;
     background-color: #333;
-    border-bottom: 3px solid #444;
+    color: #9c9c9c;
+    font-size: 1.15rem;
+    font-weight: 700;
+    border-bottom: 1px solid #B40000;
+    border-top: 1px solid #B40000;
 }
 
 .main-container {
@@ -42,10 +49,10 @@ header {
 }
 
 .input-container__label {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
     display: block;
-    color: #ff4c4c;
+    color: #EB3838;
 }
 
 textarea {
@@ -61,8 +68,8 @@ textarea {
 
 .input-container__conditions {
     margin-top: 10px;
-    font-size: 0.9rem;
-    color: #aaa;
+    font-size: 0.8rem;
+    color: #9c9c9c;
 }
 
 .input-container__buttons {
@@ -72,7 +79,7 @@ textarea {
 }
 
 .btn {
-    padding: 10px 20px;
+    padding: 12px 28px;
     font-size: 1rem;
     border: none;
     border-radius: 5px;
@@ -87,6 +94,7 @@ textarea {
 
 .btn--encrypt:hover {
     background-color: #e03e3e;
+    padding: 0 30px;
 }
 
 .btn--decrypt {
@@ -96,6 +104,7 @@ textarea {
 
 .btn--decrypt:hover {
     background-color: #555;
+    padding: 0 30px;
 }
 
 .btn--copy {
@@ -106,28 +115,33 @@ textarea {
 
 .btn--copy:hover {
     background-color: #45a049;
+    padding: 12px 30px;
 }
 
 
 .output-container__text {
     text-align: center;
+    overflow-y: auto;
+    word-wrap: break-word;
 }
 
 #output-subtitle {
-    color: #ff4c4c;
+    color: #EB3838;
     margin-bottom: 10px;
+    font-size: 1.5rem;
 }
 
 #output-paragraph {
-    color: #aaa;
+    color: #fff;
     font-size: 1.25rem;
 }
 
 footer {
-    margin-top: 40px;
+    margin-top: 1.25rem;
     text-align: center;
-    font-size: 0.8rem;
-    color: #888;
+    font-size: 0.9rem;
+    color: #9c9c9c;
+    font-family: Arial, Arial, Helvetica, sans-serif;
 }
 
 /* Media Queries para Responsividad */
@@ -152,7 +166,7 @@ footer {
     }
 
     .input-container, .output-container {
-        width: 48%;
+        width: 50%;
         margin-bottom: 0;
     }
 
