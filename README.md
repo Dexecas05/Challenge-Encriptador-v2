@@ -1,6 +1,13 @@
 # Encriptador de Texto
 
+![status](https://img.shields.io/badge/Estado-Completo-lightblue)
+![version](https://img.shields.io/badge/Version-v2-yellow)
+
 Este proyecto es un **Encriptador de Texto**, desarrollado como parte de un challenge propuesto por **Alura Latam** como parte del programa **Oracle Next Education (ONE)**.
+
+## Versión
+
+Este repositorio -como su nombre lo indica- corresponde a una segunda versión del encriptador solicitado. Se trata de una adaptación libre en cuanto a la estética pero que respeta la estructura, funcionalidades y responsividad requeridas.
 
 ## Descripción
 
